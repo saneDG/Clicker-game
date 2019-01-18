@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="Clicker v0.1">
+    <meta name="author" content="Santeri">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body onload="hideBoxes()">
+    <script src="scripts.js"></script>
+    <div>
+        <h1>The Code Clicker v0.1</h1>
+
+        <div class="row">
+            <div class="column" style="background-color: aqua; width: 300px;">
+                <p style="text-align: center">Lines of code:
+                    <p style="padding: 10px; text-align: center" id="vbuckamount">i</p>
+                </p>
+            </div>
+            <div class="column" id="lps">
+            </div>
+        </div>
+
+        <div style="padding-bottom: 30px; padding-top: 10px">
+            <p>Write the code:</p>
+            <input type="text" size="38" onkeyup="clickEvent()" id="codeForm">
+        </div>
+        <div class="row">
+            <div id="box1" class="column">
+                <p id="box1code"></p>
+                <p style="text-align: end" id="remaining1"></p>
+            </div>
+            <div id="box2" class="column">
+                <p id="box2code"></p>
+                <p style="text-align: end" id="remaining2"></p>
+            </div>
+            <div id="box3" class="column">
+                <p id="box3code"></p>
+                <p style="text-align: end" id="remaining3"></p>
+            </div>
+        </div>
+
+        <div id="up1" class="row" style="padding-bottom: 3px">
+            <div class="column">
+                <button type="button" onclick="upgrade1()" id="timePerformance">Hire a programmer (Time profit: less than 0.0)</button>
+            </div>
+            <div class="column">
+                <p>Price:</p>
+            </div>
+            <div class="column">
+                <p id="up1price">10</p>
+            </div>
+        </div>
+
+        <div id="up2" class="row" style="padding-bottom: 3px">
+            <div class="column">
+                <button type="button" onclick="upgrade2()" id ="typingPerformance">New keyboard (Typing performance: less than 0.0)</button>
+            </div>
+            <div class="column">
+                <p>Price:</p>
+            </div>
+            <div class="column">
+                <p id="up2price">500</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
